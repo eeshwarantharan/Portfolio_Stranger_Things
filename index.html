@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharaneeshwaran V U | Stranger Things Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto+Mono:wght@400;700&family=Rubik+Glitch&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Visual Effects -->
+    <div class="overlay"></div>
+    <div class="scanlines"></div>
+    <div class="root-left"></div>
+    <div class="root-right"></div>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="cassette">
+            <div class="tape-spools">
+                <div class="spool left"></div>
+                <div class="spool right"></div>
+            </div>
+            <div class="label"></div>
+        </div>
+        <button id="play-btn" class="retro-btn"><i class="fas fa-play"></i> PLAY "KIDS"</button>
+        <div class="music-credit">
+            "Kids" by Kyle Dixon & Michael Stein<br>
+            (Stranger Things, Vol. 1)
+        </div>
+        <audio id="bg-music" loop>
+            <source src="assets/Kids.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="upside-down-particles"></div>
+        <div class="title-container">
+            <h1 class="stranger-title">
+                <span class="line-1">Tharaneeshwaran V U</span>
+                <span class="line-2">PORTFOLIO</span>
+            </h1>
+        </div>
+        <p class="subtitle blink">WELCOME TO THE UPSIDE DOWN</p>
+        <div class="hero-buttons">
+            <button onclick="activateUpsideDown()" class="retro-btn small-btn" title="Click to enter the Upside Down">
+                <i class="fas fa-biohazard"></i> ENTER THE UPSIDE DOWN
+            </button>
+        </div>
+        <div class="scroll-indicator">SCROLL TO EXPLORE</div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">THE HAWKINS LAB <span class="small-text">(About)</span></h2>
+            <div class="card-container">
+                <div class="card profile-card">
+                    <div class="profile-img-container">
+                        <img src="assets/photo.jpeg" alt="Tharaneeshwaran" class="profile-img">
+                    </div>
+                    <h3><i class="fas fa-user-astronaut"></i> PROFILE</h3>
+                    <p>Computer Science Engineering student with a passion for AI/ML, 3D Vision, and Embedded Systems.
+                        Currently exploring the depths of signal propagation and digital twins.</p>
+                    <ul class="details-list">
+                        <li><strong>Email:</strong> eeshwarantharan@gmail.com</li>
+                        <li><strong>Phone:</strong> +91 9171907755</li>
+                        <li><strong>Location:</strong> Puducherry, India</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3><i class="fas fa-graduation-cap"></i> EDUCATION</h3>
+                    <div class="timeline-item">
+                        <h4>IIT Madras (Student Exchange)</h4>
+                        <p class="date">July 2025 – May 2026</p>
+                        <p>B.Tech, Computer Science and Engineering</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>NIT Puducherry</h4>
+                        <p class="date">Nov 2022 – May 2025</p>
+                        <p>B.Tech, Computer Science and Engineering</p>
+                        <p class="highlight">CGPA: 9.17</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="content-section">
+            <h2 class="section-title">HAWKINS POWER & LIGHT <span class="small-text">(Experience)</span></h2>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>IIT Madras</h3>
+                        <span class="role">Summer Intern</span>
+                        <span class="date">May 2025 – July 2025</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>Simulated GNSS and RF signal propagation using NVIDIA Sionna.</li>
+                        <li>Evaluated SDR tools (GNSS-SDR, HackRF) for satellite communication.</li>
+                        <li>Reconstructed indoor 3D environments with COLMAP and Gaussian Splatting.</li>
+                        <li>Integrated wireless signal data with 3D geometry-based ray tracing.</li>
+                    </ul>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>IINVSYS</h3>
+                        <span class="role">R&D Intern</span>
+                        <span class="date">May 2024 – June 2024</span>
+                    </div>
+                    <ul class="exp-details">
+                        <li>Gained in-depth knowledge of C, embedded systems, and STM32 devices.</li>
+                        <li>Developed a GNSS simulator tool for tracking satellite orbits via TCP.</li>
+                        <li>Developed firmware for WiFi enabled IoT devices.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">THE UPSIDE DOWN <span class="small-text">(Projects)</span></h2>
+            <div class="project-carousel">
+                <div class="project-card">
+                    <h3>ARGOS: Wireless Digital Twin</h3>
+                    <p class="tech-stack">Sionna RT, COLMAP, Gaussian Splatting, UWB</p>
+                    <p>A multimodal wireless digital twin combining visual priors and RF data for adaptive anchor
+                        selection and sub-meter indoor localization accuracy.</p>
+                    <span class="badge">Communicated - PerCom 2026</span>
+                </div>
+                <div class="project-card">
+                    <h3>Sionna AI Agent</h3>
+                    <p class="tech-stack">LangChain, ChromaDB, Llama 3, Gemini</p>
+                    <p>Open-source RAG agent for NVIDIA Sionna with a dual-LLM backend and "Draft & Correct" reasoning
+                        framework.</p>
+                </div>
+                <div class="project-card">
+                    <h3>IRBN Canteen App</h3>
+                    <p class="tech-stack">Flutter, Firebase, Figma</p>
+                    <p>Inventory management app for the Police Department with secure auth and role-based access.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <h2 class="section-title">ARCADE HIGH SCORES <span class="small-text">(Skills)</span></h2>
+            <div class="skills-board">
+                <div class="skill-category">
+                    <h3>AI / ML</h3>
+                    <p>LangChain, Hugging Face, PyTorch, Scikit-learn, OpenCV</p>
+                </div>
+                <div class="skill-category">
+                    <h3>3D Vision</h3>
+                    <p>LiDAR, Gaussian Splatting, Blender</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <p>Python, C, Java, JavaScript, Dart, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Web & Mobile</h3>
+                    <p>Flutter, Firebase, Streamlit, HTML/CSS</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <p>Git, Docker, Selenium, STM32, NVIDIA Sionna</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Game Section -->
+        <section id="arcade" class="content-section">
+            <h2 class="section-title">MINDFLAYER CHASE <span class="small-text">(Survive!)</span></h2>
+            <div class="game-container">
+                <canvas id="mindflayer-canvas"></canvas>
+                <div class="game-controls">
+                    <p>CONTROLS: <strong>ARROW KEYS</strong> TO DRIVE | AVOID OBSTACLES | DON'T LET THE MINDFLAYER CATCH
+                        YOU!</p>
+                    <button id="start-game-btn" class="retro-btn">START ENGINE</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2 class="section-title">FRIENDS DON'T LIE <span class="small-text">(Contact)</span></h2>
+            <div class="contact-links">
+                <a href="mailto:eeshwarantharan@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> SEND
+                    MESSAGE</a>
+                <a href="https://www.linkedin.com/in/tharaneeshwaran/" target="_blank" class="contact-btn"><i
+                        class="fab fa-linkedin"></i> LINKEDIN</a>
+                <a href="https://github.com/eeshwarantharan" target="_blank" class="contact-btn"><i
+                        class="fab fa-github"></i> GITHUB</a>
+                <a href="https://leetcode.com/u/eeshwarantharan/" target="_blank" class="contact-btn"><i
+                        class="fas fa-code"></i> LEETCODE</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>DESIGNED IN THE UPSIDE DOWN &copy; 2025</p>
+    </footer>
+
+    <script src="games.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

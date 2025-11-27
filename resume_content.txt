@@ -1,0 +1,57 @@
+                        Tharaneeshwaran V U
+                       eeshwarantharan@gmail.com | +91 9171907755 | Puducherry, India
+                                LinkedIn | CodeChef | GitHub | LeetCode
+Education
+
+  IIT Madras                                                                                   Chennai, India
+  B.Tech, Computer Science and Engineering (Student Exchange Programme)                 July 2025 – May 2026
+  NIT Puducherry                                                                              Karaikal, India
+  B.Tech, Computer Science and Engineering                                              Nov 2022 – May 2025
+  CGPA: 9.17
+  Aditya Vidyashram                                                                         Puducherry, India
+  Higher Secondary Education                                                            June 2021 – July 2022
+  Percentage: 91.2%
+Experience
+
+  IIT Madras | Summer Intern                                             Chennai, India | May 2025 – July 2025
+     • Simulated GNSS and RF signal propagation using NVIDIA Sionna and evaluated SDR tools
+       (GNSS-SDR, HackRF) to analyze satellite communication and localization behavior.
+     • Reconstructed indoor 3D environments with COLMAP and Gaussian Splatting to derive visual priors
+       for RF channel modeling and enable geometry-aware ray tracing simulations.
+     • Advanced hybrid localization research by integrating wireless signal data with 3D geometry-based ray
+       tracing, optimizing simulation pipelines, and improving reproducibility across the research team.
+  IINVSYS | Research and Development Intern                          Puducherry, India | May 2024 – June 2024
+     • Gained in-depth knowledge of C, embedded systems, and STM32 devices.
+     • Developed a GNSS simulator tool to track satellite orbits, ground paths, and velocity using TCP-based
+       client-server communication between OBC and simulation software.
+     • Developed and tested firmware for WiFi enabled IoT devices and contributed to Foreign Object
+       Detection solutions.
+Skills
+
+  AI / ML:                       LangChain, Hugging Face, PyTorch, Scikit-learn, OpenCV
+  3D Vision & Graphics:          LiDAR, Gaussian Splatting, Blender
+  Programming:                   Python, C, Java, JavaScript, Dart, SQL, HTML/CSS
+  Web & Mobile Dev:              Flutter, Firebase, Streamlit, Bootstrap
+  Tools & Platforms:             Git, Docker, Selenium, STM32, NVIDIA Sionna
+Projects / Publications
+
+  ARGOS: Leveraging Visual Priors for Scalable Wireless Navigation (Communicated - PerCom 2026)
+  Sionna RT, COLMAP, Gaussian Splatting, UWB, RF Channel Modeling
+     • Developed ARGOS, a multimodal wireless digital twin combining visual priors and RF data for adaptive
+       anchor selection and sub-meter indoor localization accuracy in dynamic industrial environments.
+  Sionna AI Agent - Advanced RAG Developer Assistant                                            [GitHub Link]
+  LangChain, ChromaDB, Hugging Face API (Llama 3,Gemini), Streamlit, Python
+     • Developed an open-source RAG agent for NVIDIA Sionna, integrating a dual-LLM backend (Llama 3 &
+       Gemini), multi-vector retrieval pipeline, and a two-stage “Draft & Correct” reasoning framework with a
+       Streamlit UI for reliable, context-aware code generation.
+  IRBN Canteen : Puducherry - Mobile App
+  Figma, Flutter, Firebase, VS Code
+     • Developed a canteen inventory management app for the Police Department using Firebase with secure
+       authentication, supplier-wise tracking, and a Material Design 3 UI supporting future analytics and
+       role-based access.
+Honors & Awards
+
+  • NTSE Stage 2 Scholar
+  • Positions of Responsibility (At NIT PY) : VP [Coding Club & Arts & Crafts Club], ProShow Head
+  [Gyanith-TechFest], Core Member [Le Ciel-CulFest], Treasurer [Association of CS Engineers].
+
