@@ -223,7 +223,8 @@ body {
 }
 
 .card-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    /* Smaller min-width for mobile */
 }
 
 .experience-grid {
@@ -231,7 +232,8 @@ body {
 }
 
 .skills-board {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* Smaller min-width for skills */
 }
 
 .card,
@@ -545,14 +547,24 @@ footer {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        /* Smaller section titles */
+        margin-bottom: 20px;
     }
 
     /* Stack buttons */
     .hero-buttons {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .retro-btn {
+        width: 80%;
+        /* Wider buttons on mobile for easier tapping */
+        text-align: center;
     }
 
     /* Music Player: Compact and Top-Right */
@@ -560,10 +572,11 @@ footer {
         bottom: auto;
         top: 10px;
         right: 10px;
-        padding: 5px;
-        transform: scale(0.8);
+        padding: 8px;
+        transform: scale(0.85);
         /* Smaller */
         transform-origin: top right;
+        max-width: 150px;
     }
 
     .cassette {
@@ -574,8 +587,8 @@ footer {
     /* Game Container */
     .game-container {
         width: 100vw;
-        margin-left: -20px;
-        /* Counteract section padding */
+        margin-left: -15px;
+        /* Counteract section padding (15px) */
         border-left: none;
         border-right: none;
     }
@@ -583,34 +596,49 @@ footer {
     #mindflayer-canvas {
         height: 300px;
         /* Shorter canvas on mobile */
+        width: 100%;
     }
 
     /* Contact Links */
     .contact-links {
         flex-direction: column;
         align-items: stretch;
+        gap: 15px;
     }
 
     .contact-btn {
         text-align: center;
+        padding: 12px;
+        /* Larger touch target */
     }
 
     /* Hide roots on very small screens if they obstruct text */
     .root-left,
     .root-right {
-        width: 50px;
+        width: 40px;
         /* Thinner roots */
-        opacity: 0.5;
+        opacity: 0.4;
     }
 }
 
 @media (max-width: 480px) {
     .stranger-title .line-1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .stranger-title .line-2 {
+        font-size: 1.2rem;
     }
 
     .profile-img-container {
         width: 120px;
         height: 120px;
+    }
+
+    .card,
+    .exp-card,
+    .project-card {
+        padding: 15px;
+        /* Less padding in cards */
     }
 }

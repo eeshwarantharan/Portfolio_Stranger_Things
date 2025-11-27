@@ -7,7 +7,8 @@ const startBtn = document.getElementById('start-game-btn');
 // Responsive Canvas
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = 500;
+    // Adjust height based on screen width
+    canvas.height = window.innerWidth < 768 ? 300 : 500;
 }
 window.addEventListener('resize', resizeCanvas);
 resizeCanvas();
