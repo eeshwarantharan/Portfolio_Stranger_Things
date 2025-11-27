@@ -520,13 +520,97 @@ footer {
     }
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
     .stranger-title .line-1 {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        /* Smaller title */
+        letter-spacing: 2px;
     }
 
     .stranger-title .line-2 {
-        font-size: 1rem;
+        font-size: 1.5rem;
+        letter-spacing: 5px;
+    }
+
+    .subtitle {
+        font-size: 0.9rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .content-section {
+        padding: 40px 15px;
+        /* Less padding */
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Stack buttons */
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Music Player: Compact and Top-Right */
+    .music-player {
+        bottom: auto;
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+        transform: scale(0.8);
+        /* Smaller */
+        transform-origin: top right;
+    }
+
+    .cassette {
+        display: none;
+        /* Hide cassette on mobile to save space */
+    }
+
+    /* Game Container */
+    .game-container {
+        width: 100vw;
+        margin-left: -20px;
+        /* Counteract section padding */
+        border-left: none;
+        border-right: none;
+    }
+
+    #mindflayer-canvas {
+        height: 300px;
+        /* Shorter canvas on mobile */
+    }
+
+    /* Contact Links */
+    .contact-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .contact-btn {
+        text-align: center;
+    }
+
+    /* Hide roots on very small screens if they obstruct text */
+    .root-left,
+    .root-right {
+        width: 50px;
+        /* Thinner roots */
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 480px) {
+    .stranger-title .line-1 {
+        font-size: 2.2rem;
+    }
+
+    .profile-img-container {
+        width: 120px;
+        height: 120px;
     }
 }

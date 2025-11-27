@@ -31,6 +31,39 @@ document.addEventListener('keydown', e => {
 });
 document.addEventListener('keyup', e => keys[e.code] = false);
 
+// Touch Controls
+let touchStartX = 0;
+let touchStartY = 0;
+
+canvas.addEventListener('touchstart', e => {
+    e.preventDefault();
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+}, { passive: false });
+
+canvas.addEventListener('touchmove', e => {
+    e.preventDefault();
+    const touchX = e.touches[0].clientX;
+    const touchY = e.touches[0].clientY;
+
+    const deltaX = touchX - touchStartX;
+    const deltaY = touchY - touchStartY;
+
+    // Move player based on drag
+    player.x += deltaX;
+    player.y += deltaY;
+
+    // Clamp player to canvas
+    if (player.x < 0) player.x = 0;
+    if (player.x > canvas.width - player.width) player.x = canvas.width - player.width;
+    if (player.y < 0) player.y = 0;
+    if (player.y > canvas.height - player.height) player.y = canvas.height - player.height;
+
+    // Update start pos for next frame
+    touchStartX = touchX;
+    touchStartY = touchY;
+}, { passive: false });
+
 if (startBtn) {
     startBtn.addEventListener('click', startGame);
 }
